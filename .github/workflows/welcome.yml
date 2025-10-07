@@ -16,4 +16,4 @@ jobs:
         run: gh pr comment "$PR_URL" --body "Welcome to the repository!"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_URL: ${{ github.event.pull_rqeuests.html_url}}        
+          PR_URL: ${{ github.event.pull_requests.html_url }}        
